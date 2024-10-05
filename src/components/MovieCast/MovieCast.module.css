@@ -1,0 +1,37 @@
+.list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.item {
+  background-color: #f8f8f8;
+  border-radius: 8px;
+  padding: 15px;
+  text-align: center;
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+  width: 200px;
+  transition: transform 0.3s ease;
+}
+
+.item:hover {
+  transform: scale(1.05);
+}
+
+.image {
+  margin-bottom: 10px;
+  width: 100%;
+  height: auto;
+}
+
+.name {
+  font-size: 18px;
+  font-weight: bold;
+  color: #333;
+  margin: 5px 0;
+}
+
+.character {
+  font-size: 14px;
+  color: #666;
+}
