@@ -27,6 +27,9 @@ export default function MoviesPage() {
       const fetchMovies = async () => {
         try {
           const data = await fetchSearchMovies(movieQuery);
+          if (data.length === 0) {
+            toast.info("No movies found for your search query.");
+          }
           setMovies(data);
         } catch {
           toast.error("Please try again later.");
